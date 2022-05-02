@@ -10,17 +10,22 @@ const Input = ({
   invalid,
   onInputChange,
   value,
+  name,
 }) => {
   return (
     <div className="form-control">
       <div className="input-labels">
-        <Label className={labelClassName}>{label}</Label>
+        <Label className={labelClassName} labelFor={name}>
+          {label}
+        </Label>
         {invalid && (
           <Label className={`invalid ${labelClassName}`}>Can't be zero</Label>
         )}
       </div>
       <input
         type={type}
+        id={name}
+        name={name}
         value={value}
         onChange={onInputChange}
         className={invalid ? `${className} invalid` : className}

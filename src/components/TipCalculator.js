@@ -28,6 +28,7 @@ const TipCalculator = () => {
           value={bill}
           onInputChange={updateBill}
           type={'text'}
+          name={'bill'}
         />
         <TipSelector />
         <Input
@@ -35,6 +36,7 @@ const TipCalculator = () => {
           label={'Number of People'}
           className={'persons'}
           value={persons}
+          name={'persons'}
           onInputChange={updatePersons}
           invalid={persons === 0}
           labelClassName={'mt-1'}
