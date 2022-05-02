@@ -15,7 +15,7 @@ const TipCalculator = () => {
   };
 
   const updatePersons = (e) => {
-    setPersons(e.target.value);
+    setPersons(Math.max(0, +e.target.value));
   };
 
   return (

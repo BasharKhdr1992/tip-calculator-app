@@ -8,7 +8,7 @@ const TipLabel = ({ title, amount }) => {
         <p className="title">{title}</p>
         <p className="per">/ person</p>
       </div>
-      <h1 className="amount">{`$${parseFloat(amount)}`}</h1>
+      <h1 className="amount">{`$${amount.toFixed(2)}`}</h1>
     </div>
   );
 };
