@@ -1,0 +1,29 @@
+.tip-calculator {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  min-height: 50vh;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 12px;
+  padding: 2em;
+}
+
+.tip-calc-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 45%;
+}
+
+@media screen and (max-width: 1000px) {
+  .tip-calculator {
+    width: 80%;
+    flex-direction: column;
+    align-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  .tip-calc-form {
+    width: 100%;
+  }
+}

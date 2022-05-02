@@ -1,0 +1,12 @@
+.form-label {
+  color: hsl(184, 14%, 56%);
+  font-size: 1.2rem;
+}
+
+.mt-1 {
+  margin-top: 1em;
+}
+
+label.invalid {
+  color: red;
+}

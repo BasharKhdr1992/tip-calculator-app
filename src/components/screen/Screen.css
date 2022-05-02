@@ -1,0 +1,23 @@
+.screen {
+  width: 45%;
+  min-height: inherit;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tip-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1000px) {
+  .screen {
+    margin-top: 1em;
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+.tip {
+  width: 5.7em;
+  background-color: hsl(183, 100%, 15%);
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  padding: 8px;
+  cursor: pointer;
+  font-family: 'Space Mono', sans-serif;
+}
+
+.tip:hover {
+  color: hsl(183, 100%, 15%);
+  background-color: hsl(185, 41%, 84%);
+}
+
+.tip.selected {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+@media screen and (max-width: 700px) {
+  .tip {
+    width: 7.5em;
+  }
+}
