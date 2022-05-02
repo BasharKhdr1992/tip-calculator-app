@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   width: 60%;
-  min-height: 50vh;
+  min-height: 30vh;
   background-color: hsl(0, 0%, 100%);
   border-radius: 12px;
   padding: 2em;

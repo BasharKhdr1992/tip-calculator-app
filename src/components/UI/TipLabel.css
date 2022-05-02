@@ -6,7 +6,8 @@
 
 .title {
   color: white;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  font-weight: 700;
 }
 
 .per {
@@ -15,6 +16,6 @@
 }
 
 .amount {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: hsl(172, 67%, 45%);
 }

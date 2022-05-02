@@ -19,13 +19,15 @@ const Screen = () => {
     updateTipAmount();
   }, [persons, customTip, selectedTip, bill, updateTipAmount]);
 
-  let perPerson = persons > 0 ? tipAmount / persons : 0.0;
+  let tipPerPerson = persons > 0 ? tipAmount / persons : 0.0;
+
+  let amountPerPerson = persons > 0 ? bill / persons : 0.0;
 
   return (
     <div className="screen">
       <div className="tip-labels">
-        <TipLabel title={'Tip Amount'} amount={tipAmount} />
-        <TipLabel title={'Total'} amount={perPerson} />
+        <TipLabel title={'Tip Amount'} amount={tipPerPerson} />
+        <TipLabel title={'Total'} amount={amountPerPerson + tipPerPerson} />
       </div>
       <Reset onClick={reset} />
     </div>
