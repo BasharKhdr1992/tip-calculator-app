@@ -15,11 +15,11 @@ const data = [
   },
   {
     id: 4,
-    value: 20,
+    value: 25,
   },
   {
     id: 5,
-    value: 25,
+    value: 50,
   },
 ];
 
